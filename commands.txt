@@ -1,0 +1,13 @@
+docker-compose up
+
+docker ps
+
+docker exec -it learndoobie-db-1 psql -U docker
+
+
+docker# create database demo;
+
+docker# \c demo
+
+docker# create table Students(id serial not null, name character varying not null, primary key(id));
+
